@@ -24,17 +24,17 @@ sed -i '/watch/d' ./Procfile
 
 bench get-app crm --branch main
 
-bench new-site crm.localhost \
+bench new-site frappe.pontoads.com.br \
     --force \
     --mariadb-root-password 123 \
     --admin-password admin \
     --no-mariadb-socket
 
-bench --site crm.localhost install-app crm
-bench --site crm.localhost set-config developer_mode 1
-bench --site crm.localhost set-config mute_emails 1
-bench --site crm.localhost set-config server_script_enabled 1
-bench --site crm.localhost clear-cache
-bench use crm.localhost
+bench --site frappe.pontoads.com.br install-app crm
+bench --site frappe.pontoads.com.br set-config developer_mode 1
+bench --site frappe.pontoads.com.br set-config mute_emails 1
+bench --site frappe.pontoads.com.br set-config server_script_enabled 1
+bench --site frappe.pontoads.com.br clear-cache
+bench use frappe.pontoads.com.br
 
 bench start

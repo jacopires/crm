@@ -26,7 +26,7 @@ bench get-app crm --branch main
 
 bench new-site frappe.pontoads.com.br \
     --force \
-    --mariadb-root-password 123 \
+    --mariadb-root-password Rise26120092@ \
     --admin-password admin \
     --no-mariadb-socket
 
